@@ -21,6 +21,7 @@ print(data.describe)
 print(data.isnull().sum())
 print(data["diagnosis"].value_counts())
 
+#drop unnessary columns
 data.drop(columns=["Unnamed: 32"], inplace=True)
 
 # Encode categorical columns
